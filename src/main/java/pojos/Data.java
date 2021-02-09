@@ -4,76 +4,68 @@ import org.apache.commons.lang3.builder.ToStringBuilder;
 
 public class Data {
 
-    private Integer id;
-    private String employeeName;
-    private Integer employeeSalary;
-    private Integer employeeAge;
-    private String profileImage;
+    private int id;
+    private String employee_name;
+    private int employee_salary;
+    private int employee_age;
+    private String profile_image;
 
 
     public Data() {
     }
 
-    /**
-     *
-     * @param employeeName
-     * @param employeeAge
-     * @param id
-     * @param profileImage
-     * @param employeeSalary
-     */
-    public Data(Integer id, String employeeName, Integer employeeSalary, Integer employeeAge, String profileImage) {
+    public Data(int id, String employee_name, int employeeSalary, int employeeAge, String profileImage) {
         super();
         this.id = id;
-        this.employeeName = employeeName;
-        this.employeeSalary = employeeSalary;
-        this.employeeAge = employeeAge;
-        this.profileImage = profileImage;
+        this.employee_name = employee_name;
+        this.employee_salary = employeeSalary;
+        this.employee_age = employeeAge;
+        this.profile_image = profileImage;
     }
 
-    public Integer getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(int id) {
         this.id = id;
     }
 
-    public String getEmployeeName() {
-        return employeeName;
+    public String getEmployee_name() {
+        return employee_name;
     }
 
-    public void setEmployeeName(String employeeName) {
-        this.employeeName = employeeName;
+    public void setEmployee_name(String employee_name) {
+        this.employee_name = employee_name;
     }
 
-    public Integer getEmployeeSalary() {
-        return employeeSalary;
+    public int getEmployee_salary() {
+        return employee_salary;
     }
 
-    public void setEmployeeSalary(Integer employeeSalary) {
-        this.employeeSalary = employeeSalary;
+    public void setEmployee_salary(int employee_salary) {
+        this.employee_salary = employee_salary;
     }
 
-    public Integer getEmployeeAge() {
-        return employeeAge;
+    public int getEmployee_age() {
+        return employee_age;
     }
 
-    public void setEmployeeAge(Integer employeeAge) {
-        this.employeeAge = employeeAge;
+    public void setEmployee_age(int employee_age) {
+        this.employee_age = employee_age;
     }
 
-    public String getProfileImage() {
-        return profileImage;
+    public String getProfile_image() {
+        return profile_image;
     }
 
-    public void setProfileImage(String profileImage) {
-        this.profileImage = profileImage;
+    public void setProfile_image(String profile_image) {
+        this.profile_image = profile_image;
     }
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("id", id).append("employeeName", employeeName).append("employeeSalary", employeeSalary).append("employeeAge", employeeAge).append("profileImage", profileImage).toString();
+        return new ToStringBuilder(this).append("id", id).append("employeeName", employee_name).append("employeeSalary", employee_salary).append("employeeAge", employee_age).append("profileImage", profile_image).toString();
     }
 
 }
